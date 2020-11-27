@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test" : "jest",
+    "test": "jest --watch",
     "start": "node server/server.js",
     "server": "nodemon server/server.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +32,7 @@
     "@types/mongoose": "^5.7.36",
     "@types/validator": "^13.1.0",
     "jest": "^26.6.3",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "supertest": "^6.0.1"
   }
 }
